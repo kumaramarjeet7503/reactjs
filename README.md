@@ -4,3 +4,4 @@ React is an architecture. Frameworks that implement it let you fetch data in asy
 Installation
 * npx create-react-app my-app
 * npm i react-router-dom
+* npm install react-bootstrap bootstrap@4.6.0
