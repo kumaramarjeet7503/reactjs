@@ -6,6 +6,7 @@ const cartIcon = <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 
 const PreNav = () => {
   return (
     <div className = "PreNav">
+      
       <div>
         <a href='www.mi.com'>MI Store</a><span>|</span>
         <a  href='www.mi.com'>Get MI Store App</a><span>|</span>
