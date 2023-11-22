@@ -11,7 +11,9 @@ import HotAccessioriesMenu from "./component/HotAccessioriesMenu.js"
 import {Route } from 'react-router-dom'
 import HotAccessiories from "./component/HotAccessiories.js"
 import ProductReviews from "./component/ProductReviews.js"
-
+import Videos from './component/Videos.js'
+import Banner from './component/Banner.js'
+import Footer from './component/Footer.js'
 
 function App() {
   return (
@@ -34,6 +36,11 @@ function App() {
       </Routes>
       <Heading text="PRODUCT REVIEWS"/>
       <ProductReviews productReviews = {data.productReviews} />
+      <Heading text="VIDEOS"/>
+      <Videos videos = {data.videos} />
+      <Heading text="IN THE PRESS"/>
+      <Banner end={data.banner.end} />
+      <Footer footer={data.footer}></Footer>
     </Router>
   );
 }
