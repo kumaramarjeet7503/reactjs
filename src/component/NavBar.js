@@ -14,14 +14,15 @@ function NavBar() {
             </Link>
         </div>
 
-          <Link to="/" className='navlinks' >MI Phones</Link>
-          <Link to="/" className='navlinks'>Redmi Phones</Link>
-          <Link to="/" className='navlinks'>TV</Link>
-          <Link to="/" className='navlinks'>Laptops</Link>
-          <Link to="/" className='navlinks'>Fitness & Lifestyle</Link>
-          <Link to="/" className='navlinks'>Home</Link>
-          <Link to="/" className='navlinks'>Radio</Link>
-          <Link to="/" className='navlinks'>Accessories</Link>
+
+          <a href="/miphones" className='navlinks' >MI Phones</a>
+          <a href="/redmiphones" className='navlinks'>Redmi Phones</a>
+          <a href="/tv" className='navlinks'>TV</a>
+          <a href="/laptop" className='navlinks'>Laptops</a>
+          <a href="/fitness" className='navlinks'>Fitness & Lifestyle</a>
+          <a href="/home" className='navlinks'>Home</a>
+          <a href="/audio" className='navlinks'>Audio</a>
+          <a href="/accessories" className='navlinks'>Accessories</a>
 
         <div className="searchbox">
             <input type='text' placeholder='search for the product' ></input>{searchIcon}
