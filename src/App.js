@@ -10,8 +10,7 @@ import StarProduct from "./component/StarProduct.js"
 import HotAccessioriesMenu from "./component/HotAccessioriesMenu.js"
 import {Route } from 'react-router-dom'
 import HotAccessiories from "./component/HotAccessiories.js"
-import ProductReviews from "./component/ProductReviews.js"
-import Videos from './component/Videos.js'
+
 
 function App() {
   return (
@@ -26,16 +25,11 @@ function App() {
       <Heading text="HOT ACCESSORIES"/>
       <HotAccessioriesMenu />
       <Routes>
+
         <Route path="/music" element={ <HotAccessiories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music} />}/>
-        <Route path="/devices" element={ <HotAccessiories device={data.hotAccessories.smartDevice} deviceCover={data.hotAccessoriesCover.smartDevice} />}/>
-        <Route path="/home" element={ <HotAccessiories home={data.hotAccessories.home} homeCover={data.hotAccessoriesCover.home} />}/>
-        <Route path="/lifestyle" element={ <HotAccessiories lifestyle={data.hotAccessories.lifeStyle} lifestyleCover={data.hotAccessoriesCover.lifeStyle} />}/>
-        <Route path="/mobileAccessories" element={ <HotAccessiories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories} />}/>
+
       </Routes>
-      <Heading text="PRODUCT REVIEWS"/>
-      <ProductReviews productReviews = {data.productReviews} />
-      <Heading text="VIDEOS"/>
-      <Videos videos = {data.videos} />
+    
     </Router>
   );
 }
